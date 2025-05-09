@@ -1,0 +1,514 @@
+.setup-SOS {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.setup-SOS .div {
+  background-color: #f4f4f4;
+  width: 412px;
+  height: 917px;
+  position: relative;
+}
+.setup-SOS .bars-home-indicator {
+  position: absolute;
+  width: 408px;
+  height: 24px;
+  top: 859px;
+  left: 0;
+  background-color: #ffffff;
+}
+.setup-SOS .rectangle {
+  position: relative;
+  width: 136px;
+  height: 7px;
+  top: 9px;
+  left: 136px;
+  background-color: #a4a4a4;
+  border-radius: 100px;
+}
+.setup-SOS .frame {
+  display: flex;
+  flex-direction: column;
+  width: 408px;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.setup-SOS .status-bar {
+  position: relative;
+  align-self: stretch;
+  width: 112%;
+  height: 44px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.setup-SOS .BG {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: -4130px;
+  left: -2485px;
+}
+.setup-SOS .right-side {
+  position: absolute;
+  width: 67px;
+  height: 11px;
+  top: 17px;
+  left: 327px;
+}
+.setup-SOS .battery {
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  top: 0;
+  left: 42px;
+}
+.setup-SOS .wifi {
+  position: absolute;
+  width: 15px;
+  height: 11px;
+  top: 0;
+  left: 22px;
+}
+.setup-SOS .mobile-signal {
+  position: absolute;
+  width: 17px;
+  height: 11px;
+  top: 0;
+  left: 0;
+}
+.setup-SOS .left-side {
+  position: absolute;
+  width: 28px;
+  height: 11px;
+  top: 17px;
+  left: 33px;
+}
+.setup-SOS .frame-2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+}
+.setup-SOS .image-arrow-back {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.setup-SOS .text-wrapper {
+  position: relative;
+  width: 200px;
+  margin-top: -1px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #212121;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.setup-SOS .frame-3 {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  align-items: flex-start;
+  gap: 38px;
+  position: absolute;
+  top: 162px;
+  left: 26px;
+}
+.setup-SOS .frame-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.setup-SOS .group {
+  position: relative;
+  width: 360px;
+  height: 53px;
+}
+.setup-SOS .frame-5 {
+  display: flex;
+  width: 360px;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 31px;
+  left: 0;
+}
+.setup-SOS .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #212121;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  white-space: nowrap;
+}
+.setup-SOS .img {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  object-fit: cover;
+  
+}
+.setup-SOS .group-2 {
+  display: flex;
+  width: 83px;
+  height: 31px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1px 10px 6px;
+  position: absolute;
+  top: 0;
+  left: 117px;
+
+}
+.setup-SOS .view {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  top: -10px;
+  left: 10px;
+  
+}
+.setup-SOS .textlabel {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.5px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 24.7px;
+  white-space: nowrap;
+}
+.setup-SOS .frame-6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.setup-SOS .frame-7 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.setup-SOS .image-location {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.setup-SOS .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #e02323;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  white-space: nowrap;
+}
+.setup-SOS .group-3 {
+  display: flex;
+  flex-direction: column;
+  height: 146px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 15px 11px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+.setup-SOS .view-wrapper {
+  position: absolute;
+  width: 360px;
+  height: 146px;
+  top: 0;
+  left: 0;
+  background-size: 100% 100%;
+}
+.setup-SOS .view-2 {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  top: -33px;
+}
+.setup-SOS .group-4 {
+  display: flex;
+  width: 83px;
+  height: 31px;
+  align-items: center;
+  gap: 10px;
+  padding: 1px 10px 6px;
+  position: absolute;
+  top: 38px;
+  left: 191px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+.setup-SOS .view-3 {
+  position: absolute;
+  width: 83px;
+  height: 31px;
+  top: 0;
+  left: 0;
+}
+.setup-SOS .textlabel-2 {
+  margin-top: -1.5px;
+  margin-right: -1px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+  width: fit-content;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 24.7px;
+  white-space: nowrap;
+}
+.setup-SOS .button {
+  all: unset;
+  box-sizing: border-box;
+  display: none;
+  width: 119px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 5px 2px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+.setup-SOS .image {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+.setup-SOS .textlabel-3 {
+  margin-top: -3.5px;
+  margin-bottom: -1.5px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #e02323;
+  position: relative;
+  width: fit-content;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 24.7px;
+  white-space: nowrap;
+}
+.setup-SOS .frame-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.setup-SOS .frame-9 {
+  display: flex;
+  width: 360px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.setup-SOS .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #150502;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.setup-SOS .image-toggle-on {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.setup-SOS .icon-toggle-toggle {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 15px;
+  left: 4px;
+}
+.setup-SOS .input-field-no-icons {
+  display: flex;
+  flex-direction: column;
+  height: 82px;
+  align-items: flex-start;
+  gap: 6px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+.setup-SOS .first-name {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #150502;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+.setup-SOS .your-name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 0.5px solid;
+  border-color: #15050266;
+}
+.setup-SOS .your-name {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #150502;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+.setup-SOS .text-wrapper-5 {
+  position: absolute;
+  height: 18px;
+  top: 465px;
+  left: 320px;
+  font-family: var(--12-px-font-bold-font-family);
+  font-weight: var(--12-px-font-bold-font-weight);
+  color: #e02323;
+  font-size: var(--12-px-font-bold-font-size);
+  letter-spacing: var(--12-px-font-bold-letter-spacing);
+  line-height: var(--12-px-font-bold-line-height);
+  white-space: nowrap;
+  font-style: var(--12-px-font-bold-font-style);
+}
+.setup-SOS .frame-10 {
+  display: flex;
+  width: 360px;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 782px;
+  left: 24px;
+}
+.setup-SOS .button-reg {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #15050266;
+  left: 80px;
+}
+.setup-SOS .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #15050266;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+  left: -10px;
+  margin-right: 40px;
+}
+.setup-SOS .button-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #e02323;
+  border-radius: 16px;
+  overflow: hidden;
+  right: 30px;
+}
+.setup-SOS .button-3 {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+  right: 110px;
+}

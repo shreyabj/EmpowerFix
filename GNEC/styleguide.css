@@ -1,0 +1,10 @@
+:root {
+    --black: rgba(21, 5, 2, 1);
+    --typography-text-base-font-normal-font-family: "Poppins", Helvetica;
+    --typography-text-base-font-normal-font-weight: 400;
+    --typography-text-base-font-normal-font-size: 16px;
+    --typography-text-base-font-normal-letter-spacing: 0px;
+    --typography-text-base-font-normal-line-height: 24px;
+    --typography-text-base-font-normal-font-style: normal;
+  }
+  

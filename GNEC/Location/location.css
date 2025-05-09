@@ -1,0 +1,179 @@
+.location {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.location .div {
+  background-color: #ffffff;
+  width: 412px;
+  height: 917px;
+  position: relative;
+}
+.location .status-bar {
+  position: absolute;
+  width: 412px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.location .BG {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: -1016px;
+  left: -910px;
+}
+.location .right-side {
+  position: absolute;
+  width: 67px;
+  height: 11px;
+  top: 17px;
+  left: 331px;
+}
+.location .battery {
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  top: 0;
+  left: 42px;
+}
+.location .wifi {
+  position: absolute;
+  width: 15px;
+  height: 11px;
+  top: 0;
+  left: 22px;
+}
+.location .mobile-signal {
+  position: absolute;
+  width: 17px;
+  height: 11px;
+  top: 0;
+  left: 0;
+}
+.location .left-side {
+  position: absolute;
+  width: 28px;
+  height: 11px;
+  top: 17px;
+  left: 33px;
+}
+.location .bars-home-indicator {
+  position: absolute;
+  width: 408px;
+  height: 24px;
+  top: 859px;
+  left: 0;
+  background-color: #ffffff;
+}
+.location .rectangle {
+  position: relative;
+  width: 136px;
+  height: 7px;
+  top: 9px;
+  left: 136px;
+  background-color: #a4a4a4;
+  border-radius: 100px;
+}
+.location .text-wrapper {
+  position: absolute;
+  top: 409px;
+  left: 94px;
+  font-family: var(--typography-text-base-font-normal-font-family);
+  font-weight: var(--typography-text-base-font-normal-font-weight);
+  color: #150502bf;
+  font-size: var(--typography-text-base-font-normal-font-size);
+  letter-spacing: var(--typography-text-base-font-normal-letter-spacing);
+  line-height: var(--typography-text-base-font-normal-line-height);
+  white-space: nowrap;
+  font-style: var(--typography-text-base-font-normal-font-style);
+}
+.location .track-yourself {
+  position: absolute;
+  width: 259px;
+  top: 320px;
+  left: 90px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: 52px;
+  white-space: nowrap;
+}
+.location .span {
+  color: #e02323;
+}
+.location .text-wrapper-2 {
+  color: #ef7676;
+}
+.location .button-reg {
+  display: flex;
+  width: 360px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 16px;
+  position: absolute;
+  top: 726px;
+  left: 26px;
+  background-color: #e02323;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.location .button {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+.location .frame {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 6px;
+  position: absolute;
+  top: 786px;
+  left: 160px;
+}
+.location .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+  left: 15px;
+}
+.location .distance-wrapper {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 367px;
+  left: 16px;
+  background-color: #fce7e7;
+  border-radius: 54.17px;
+}
+.location .distance {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+}
