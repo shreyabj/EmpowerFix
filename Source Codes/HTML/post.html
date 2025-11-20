@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="post.css" />
+  </head>
+  <body>
+    <div class="post">
+      <div class="div">
+        <div class="frame">
+          <div class="status-bar">
+            <img class="BG" src="img/BG.png" />
+            <div class="right-side">
+              <img class="battery" src="battery.png" />
+              <img class="wifi" src="wifi.png" />
+              <img class="mobile-signal" src="img/mobile-signal.svg" />
+            </div>
+            <img class="left-side" src="time.png" />
+          </div>
+          <div class="frame-2">
+            <a href="comm.html">
+              <img class="image-arrow-back" src="back2.png"
+            /></a>
+            <div class="text-wrapper">Create Community Post</div>
+          </div>
+        </div>
+        <div class="frame-3">
+          <div class="frame-4">
+            <!-- Upload Button -->
+            <div id="uploadBtn" class="upload-container">
+              <div class="text-wrapper-2">
+                <img class="icon-image-photo" src="upload.png" />Upload Photo /
+                Video
+              </div>
+            </div>
+
+            <!-- Hidden File Input -->
+            <input type="file" id="fileInput" accept="image/,video/" />
+
+            <!-- Preview Area -->
+            <div id="preview"></div>
+          </div>
+          <div class="input-field-no-icons">
+            <div class="first-name">Title *</div>
+            <div class="your-name-wrapper">
+              <p class="your-name">
+                🛡 Safety Alert &amp; Emergency Help for Women
+              </p>
+            </div>
+          </div>
+          <div class="input-field-no-icons-2">
+            <div class="first-name">Description&nbsp;&nbsp;*</div>
+            <div class="flexcontainer-wrapper">
+              <div class="flexcontainer">
+                <p class="text-i">
+                  <span class="span"
+                    >If you or someone you know is feeling unsafe or needs
+                    urgent help, the EmpowerFix community support center at
+                    Kothrud, Pune is offering 24/7 emergency response and
+                    support.<br />🚨 No registration required — just reach out!
+                    We’re here to protect and support each other. ❤</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="input-field-no-icons">
+            <p class="p">
+              <span class="text-wrapper-3">Location</span>
+              <span class="text-wrapper-4"> (optional)</span>
+            </p>
+            <div class="frame-5">
+              <div class="frame-6">
+                <img class="image-location" src="location.png" />
+                <div class="text-wrapper-5">Kothrud, Pune, 411038</div>
+              </div>
+              <div class="text-wrapper-6">Change</div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-7">
+          <div class="button-reg-wrapper">
+            <a href="comm.html">
+              <div class="button-reg">
+                <button class="button">Post</button>
+              </div></a
+            >
+          </div>
+          <div class="bars-home-indicator"><div class="rectangle"></div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const uploadBtn = document.getElementById("uploadBtn");
+    const fileInput = document.getElementById("fileInput");
+    const preview = document.getElementById("preview");
+
+    uploadBtn.addEventListener("click", () => {
+      fileInput.click();
+    });
+
+    fileInput.addEventListener("change", () => {
+      const file = fileInput.files[0];
+      preview.innerHTML = ""; // Clear previous preview
+
+      if (file) {
+        const fileName = document.createElement("p");
+        fileName.textContent = File: ${file.name};
+        preview.appendChild(fileName);
+
+        const fileURL = URL.createObjectURL(file);
+
+        if (file.type.startsWith("image/")) {
+          const img = document.createElement("img");
+          img.src = fileURL;
+          preview.appendChild(img);
+        } else if (file.type.startsWith("video/")) {
+          const video = document.createElement("video");
+          video.src = fileURL;
+          video.controls = true;
+          preview.appendChild(video);
+        } else {
+          preview.innerHTML += "<p>Unsupported file type</p>";
+        }
+      }
+    });
+  </script>
+</html>

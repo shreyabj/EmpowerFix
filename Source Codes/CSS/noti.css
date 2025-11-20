@@ -1,0 +1,229 @@
+.notifications {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.notifications .div {
+  background-color: #f4f4f4;
+  width: 412px;
+  height: 917px;
+  position: relative;
+}
+.notifications .bars-home-indicator {
+  position: absolute;
+  width: 408px;
+  height: 24px;
+  top: 859px;
+  left: 0;
+  background-color: #ffffff;
+}
+.notifications .rectangle {
+  position: relative;
+  width: 136px;
+  height: 7px;
+  top: 9px;
+  left: 136px;
+  background-color: #a4a4a4;
+  border-radius: 100px;
+}
+.notifications .frame {
+  display: flex;
+  flex-direction: column;
+  width: 408px;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.notifications .status-bar {
+  position: relative;
+  align-self: stretch;
+  width: 112%;
+  height: 44px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.notifications .BG {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 22px;
+  left: -1435px;
+}
+.notifications .right-side {
+  position: absolute;
+  width: 67px;
+  height: 11px;
+  top: 17px;
+  left: 327px;
+}
+.notifications .battery {
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  top: 0;
+  left: 42px;
+}
+.notifications .wifi {
+  position: absolute;
+  width: 15px;
+  height: 11px;
+  top: 0;
+  left: 22px;
+}
+.notifications .mobile-signal {
+  position: absolute;
+  width: 17px;
+  height: 11px;
+  top: 0;
+  left: 0;
+}
+.notifications .left-side {
+  position: absolute;
+  width: 28px;
+  height: 11px;
+  top: 17px;
+  left: 33px;
+}
+.notifications .frame-2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+}
+.notifications .image-arrow-back {
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+.notifications .text-wrapper {
+  position: relative;
+  width: 200px;
+  font-family: "Poppins-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #424b5a;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.notifications .frame-3 {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  align-items: flex-start;
+  gap: 15px;
+  position: absolute;
+  top: 120px;
+  left: 24px;
+}
+.notifications .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.notifications .frame-4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.notifications .img-wrapper {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  background-color: #e02323;
+  border-radius: 30px;
+  box-shadow: 3px 4px 11px #1505020a, 10px 17px 20px #15050208,
+    23px 38px 26px #15050205, 40px 67px 31px #15050203,
+    63px 105px 34px transparent;
+}
+.notifications .tabler-alert {
+  position: absolute;
+  width: 115px;
+  height: 65px;
+  top: -5px;
+  left: -5px;
+}
+.notifications .frame-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+  padding: 4px 0px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+.notifications .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--typography-text-xs-font-normal-font-family);
+  font-weight: var(--typography-text-xs-font-normal-font-weight);
+  color: #212121;
+  font-size: var(--typography-text-xs-font-normal-font-size);
+  text-align: center;
+  letter-spacing: var(--typography-text-xs-font-normal-letter-spacing);
+  line-height: var(--typography-text-xs-font-normal-line-height);
+  white-space: nowrap;
+  font-style: var(--typography-text-xs-font-normal-font-style);
+}
+.notifications .p {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--typography-text-xs-font-normal-font-family);
+  font-weight: var(--typography-text-xs-font-normal-font-weight);
+  color: #212121;
+  font-size: var(--typography-text-xs-font-normal-font-size);
+  letter-spacing: var(--typography-text-xs-font-normal-letter-spacing);
+  line-height: var(--typography-text-xs-font-normal-line-height);
+  font-style: var(--typography-text-xs-font-normal-font-style);
+}
+.notifications .img {
+  position: absolute;
+  width: 115px;
+  height: 65px;
+  top: -5px;
+  left: -5px;
+}
+.notifications .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--typography-text-xs-font-normal-font-family);
+  font-weight: var(--typography-text-xs-font-normal-font-weight);
+  color: #212121;
+  font-size: var(--typography-text-xs-font-normal-font-size);
+  text-align: center;
+  letter-spacing: var(--typography-text-xs-font-normal-letter-spacing);
+  line-height: var(--typography-text-xs-font-normal-line-height);
+  white-space: nowrap;
+  font-style: var(--typography-text-xs-font-normal-font-style);
+}
+.notifications .react-icons-bs {
+  position: absolute;
+  width: 115px;
+  height: 65px;
+  top: -5px;
+  left: -5px;
+}

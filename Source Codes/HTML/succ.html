@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="succ.css" />
+  </head>
+  <body>
+    <div class="successfull">
+      <div class="div">
+        <div class="group">
+          <div class="overlap-group">
+            <div class="frame">
+              <div class="frame-2">
+                <div class="group-2"></div>
+                <div class="frame-3">
+                  <p class="textlabel">Help is on the way.</p>
+                  <p class="text-wrapper">
+                    Read the tips to avoid any further risks.
+                  </p>
+                </div>
+              </div>
+              <div class="button-reg-wrapper">
+                <a href="home.html">
+                  <div class="button-reg">
+                    <button class="button">Read Instructions</button>
+                  </div></a
+                >
+              </div>
+            </div>
+            <a href="home.html"> <img class="image-close" src="close.png" /></a>
+          </div>
+        </div>
+        <div class="status-bar">
+          <img class="BG" src="BG.png" />
+          <div class="right-side">
+            <img class="battery" src="battery.png" />
+            <img class="wifi" src="wifi.png" />
+            <img class="mobile-signal" src="signal.png" />
+          </div>
+          <img class="left-side" src="time.png" />
+        </div>
+        <div class="bars-home-indicator"><div class="rectangle"></div></div>
+      </div>
+    </div>
+
+    <div id="emergencyModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Immediate Help</h2>
+        <p>Choose an option for emergency assistance:</p>
+        <div class="modal-buttons">
+          <button onclick="callPolice()">📞 Call Police</button>
+          <button onclick="callEmergency()">🚨 Emergency Contact</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        setTimeout(() => {
+          document.getElementById("emergencyModal").style.display = "block";
+        }, 2000);
+      };
+
+      function closeModal() {
+        document.getElementById("emergencyModal").style.display = "none";
+      }
+
+      function callPolice() {
+        window.location.href = "tel:100";
+      }
+
+      function callEmergency() {
+        window.location.href = "tel:9876543210";
+      }
+    </script>
+  </body>
+</html>

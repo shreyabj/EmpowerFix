@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        width: 375px;
+        height: 812px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .header i {
+        font-size: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .header-title {
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      .chat-window {
+        flex: 1;
+        padding: 15px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .message {
+        margin: 8px 0;
+        padding: 10px 14px;
+        border-radius: 15px;
+        max-width: 80%;
+        word-wrap: break-word;
+      }
+
+      .bot-message {
+        background-color: #ececec;
+        align-self: flex-start;
+      }
+
+      .user-message {
+        background-color: #d1ffd6;
+        align-self: flex-end;
+      }
+
+      .buttons {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .buttons button {
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .buttons .emergency {
+        background-color: #ff4d4d;
+        color: white;
+        width: 80%;
+      }
+
+      .buttons .secondary {
+        background-color: #ddd;
+        color: #333;
+      }
+
+      .input-area {
+        display: flex;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        background: #fff;
+      }
+
+      .input-area input {
+        flex: 1;
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        outline: none;
+      }
+
+      .input-area button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        margin-left: 10px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+
+      .input-area i {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="home.html"><i class="fas fa-arrow-left"></i></a>
+        <span class="header-title"><i class="fas fa-robot"></i> Chatbot</span>
+      </div>
+
+      <div class="chat-window" id="chat">
+        <div class="message bot-message">Hey! How can I help you?</div>
+        <div class="buttons">
+          <button class="emergency" onclick="location.href='succ.html'">
+            🚨 Report Emergency
+          </button>
+          <div style="display: flex; gap: 10px">
+            <button class="secondary" onclick="location.href='comm.html'">
+              Community
+            </button>
+            <button class="secondary" onclick="showPrecautions()">
+              Safety Precautions
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-area">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Ask something..."
+          onkeypress="if(event.key === 'Enter') sendMessage()"
+        />
+        <button onclick="sendMessage()">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function sendMessage() {
+        const input = document.getElementById("userInput");
+        const text = input.value.trim();
+        if (!text) return;
+
+        const chat = document.getElementById("chat");
+
+        const userMsg = document.createElement("div");
+        userMsg.className = "message user-message";
+        userMsg.textContent = text;
+        chat.appendChild(userMsg);
+
+        const botMsg = document.createElement("div");
+        botMsg.className = "message bot-message";
+
+        // Basic understanding logic
+        const lower = text.toLowerCase();
+        if (lower.includes("emergency")) {
+          botMsg.textContent =
+            "If it's an emergency, please click the 🚨 button above or call the helpline.";
+        } else if (lower.includes("precaution") || lower.includes("safety")) {
+          botMsg.innerHTML = `🔐 <strong>Safety Tips:</strong><br>1. Stay calm<br>2. Share your location<br>3. Avoid dark or isolated areas<br>4. Call for help`;
+        } else if (
+          lower.includes("hello") ||
+          lower.includes("hi") ||
+          lower.includes("hey")
+        ) {
+          botMsg.textContent = "Hello! How can I assist you today?";
+        } else if (lower.includes("how are you")) {
+          botMsg.textContent =
+            "I'm doing great! Let me know how I can help you.";
+        } else if (lower.includes("help")) {
+          botMsg.textContent =
+            "Sure! Ask me anything related to safety, emergencies, or community.";
+        } else if (lower.includes("community")) {
+          botMsg.textContent =
+            "Tap the 'Community' button to connect with your local network.";
+        } else {
+          botMsg.textContent =
+            "Sorry, I didn't understand that. Try asking about emergency, safety, or community.";
+        }
+
+        chat.appendChild(botMsg);
+        chat.scrollTop = chat.scrollHeight;
+        input.value = "";
+      }
+
+      function showPrecautions() {
+        const chat = document.getElementById("chat");
+        const botMsg = document.createElement("div");
+        botMsg.className = "message bot-message";
+        botMsg.innerHTML = `
+          🔐 <strong>Emergency Safety Tips for Women:</strong><br>
+          1. Call emergency services immediately.<br>
+          2. Share your location.<br>
+          3. Stay in public or well-lit places.<br>
+          4. Use emergency apps or call family.<br>
+          5. Trust your instincts.`;
+        chat.appendChild(botMsg);
+        chat.scrollTop = chat.scrollHeight;
+      }
+    </script>
+  </body>
+</html>

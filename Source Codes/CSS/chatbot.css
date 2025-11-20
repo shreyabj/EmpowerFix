@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+}
+
+.chatbot-container {
+  width: 100%;
+  max-width: 414px;
+  /* iPhone XR width */
+  min-height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.back-arrow {
+  color: #333;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.chatbot-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Messages */
+.chat-message {
+  margin: 20px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.chat-message.bot {
+  background-color: #e9f5ff;
+  color: #333;
+}
+
+.chat-message.user {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+/* Buttons */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn.emergency {
+  background-color: #ff4d4d;
+  width: 100%;
+}
+
+.row-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn.half {
+  width: 50%;
+  background-color: #ccc;
+  color: #333;
+}

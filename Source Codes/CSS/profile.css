@@ -1,0 +1,282 @@
+.profile {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile .div {
+  background-color: #f4f4f4;
+  width: 412px;
+  height: 917px;
+  position: relative;
+}
+
+.profile .status-bar {
+  position: absolute;
+  width: 412px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.profile .BG {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: -4130px;
+  left: -1435px;
+}
+
+.profile .right-side {
+  position: absolute;
+  width: 67px;
+  height: 11px;
+  top: 17px;
+  left: 331px;
+}
+
+.profile .battery {
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  top: 0;
+  left: 42px;
+}
+
+.profile .wifi {
+  position: absolute;
+  width: 15px;
+  height: 11px;
+  top: 0;
+  left: 22px;
+}
+
+.profile .mobile-signal {
+  position: absolute;
+  width: 17px;
+  height: 11px;
+  top: 0;
+  left: 0;
+}
+
+.profile .left-side {
+  position: absolute;
+  width: 28px;
+  height: 11px;
+  top: 17px;
+  left: 33px;
+}
+
+.profile .frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  top: 74px;
+  left: 24px;
+}
+
+.profile .text-wrapper {
+  position: relative;
+  width: 177px;
+  margin-top: -1px;
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  color: #212121;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.profile .bottom-nav {
+  display: flex;
+  flex-direction: column;
+  width: 408px;
+  height: 84px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 12px 24px 16px;
+  position: absolute;
+  top: 775px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 32px 32px 0px 0px;
+}
+
+.profile .frame-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.profile .frame-3 {
+  display: flex;
+  flex-direction: column;
+  width: 68px;
+  align-items: center;
+  gap: 3px;
+  padding: 0px 4px;
+  position: relative;
+}
+
+.profile .img {
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+.profile .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  font-family: "Poppins-Regular";
+  font-weight: 400;
+  color: #a4a4a4;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile .icon-alert-error {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 2px;
+  left: 2px;
+}
+
+.profile .img-2 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.profile .home {
+  position: relative;
+  width: fit-content;
+  font-family: "Plus Jakarta Sans-Regular";
+  font-weight: 400;
+  color: #e02323;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile .bars-home-indicator {
+  position: absolute;
+  width: 408px;
+  height: 24px;
+  top: 859px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.profile .rectangle {
+  position: relative;
+  width: 136px;
+  height: 7px;
+  top: 9px;
+  left: 136px;
+  background-color: #a4a4a4;
+  border-radius: 100px;
+}
+
+.profile .frame-4 {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  align-items: center;
+  gap: 35px;
+  padding: 24px 0px;
+  position: absolute;
+  top: 118px;
+  left: 26px;
+  border-radius: 20px;
+}
+
+.profile .frame-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.profile .list {
+  display: flex;
+  height: 62px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.profile .frame-6 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.profile .the-monster-is {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--16-px-font-normal-font-family);
+  font-weight: var(--16-px-font-normal-font-weight);
+  color: #000712;
+  font-size: var(--16-px-font-normal-font-size);
+  letter-spacing: var(--16-px-font-normal-letter-spacing);
+  line-height: var(--16-px-font-normal-line-height);
+  font-style: var(--16-px-font-normal-font-style);
+  margin-right: 250px;
+}
+
+.profile .button-primary {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px 32px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: #ff424e;
+  box-shadow: 0px 12px 25px #00000005, 0px 46px 46px #00000005,
+    0px 104px 62px #00000003, 0px 185px 74px transparent,
+    0px 289px 81px transparent;
+}
+
+.profile .login {
+  position: relative;
+  width: fit-content;
+  margin-top: -2px;
+  font-family: var(--18-px-font-bold-font-family);
+  font-weight: var(--18-px-font-bold-font-weight);
+  color: #ff424e;
+  font-size: var(--18-px-font-bold-font-size);
+  text-align: center;
+  letter-spacing: var(--18-px-font-bold-letter-spacing);
+  line-height: var(--18-px-font-bold-line-height);
+  white-space: nowrap;
+  font-style: var(--18-px-font-bold-font-style);
+}

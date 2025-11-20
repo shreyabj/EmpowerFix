@@ -1,0 +1,280 @@
+.successfull {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.successfull .div {
+  background-color: #f4f4f4;
+  width: 412px;
+  height: 917px;
+  position: relative;
+}
+
+.successfull .group {
+  position: absolute;
+  width: 280px;
+  height: 312px;
+  top: 281px;
+  left: 68px;
+}
+
+.successfull .overlap-group {
+  position: relative;
+  height: 312px;
+  border-radius: 20px;
+}
+
+.successfull .frame {
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px 21px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0px 5px 100px #1505021f, 0px 21px 70px #15050212,
+    0px 48px 50px #15050208, 0px 85px 34px #15050205, 0px 133px 37px transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.successfull .frame-2 {
+  width: 237px;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.successfull .group-2 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-image: url(tick.png);
+  background-size: 100% 100%;
+}
+
+.successfull .frame-3 {
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.successfull .textlabel {
+  margin-top: -1px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  color: var(--black-212121);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.successfull .text-wrapper {
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  color: var(--black-212121);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.successfull .button-reg-wrapper {
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 80%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.successfull .button-reg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #e02323;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.successfull .button {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins-SemiBold", "Helvetica";
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.successfull .image-close {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 20px;
+  left: 236px;
+}
+
+.successfull .status-bar {
+  position: absolute;
+  width: 412px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.successfull .BG {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: -1016px;
+  left: -3068px;
+}
+
+.successfull .right-side {
+  position: absolute;
+  width: 67px;
+  height: 11px;
+  top: 17px;
+  left: 331px;
+}
+
+.successfull .battery {
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  top: 0;
+  left: 42px;
+}
+
+.successfull .wifi {
+  position: absolute;
+  width: 15px;
+  height: 11px;
+  top: 0;
+  left: 22px;
+}
+
+.successfull .mobile-signal {
+  position: absolute;
+  width: 17px;
+  height: 11px;
+  top: 0;
+  left: 0;
+}
+
+.successfull .left-side {
+  position: absolute;
+  width: 28px;
+  height: 11px;
+  top: 17px;
+  left: 33px;
+}
+
+.successfull .bars-home-indicator {
+  position: absolute;
+  width: 408px;
+  height: 24px;
+  top: 893px;
+  left: 4px;
+  background-color: #ffffff;
+}
+
+.successfull .rectangle {
+  position: relative;
+  width: 136px;
+  height: 7px;
+  top: 9px;
+  left: 136px;
+  background-color: #a4a4a4;
+  border-radius: 100px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.modal-buttons button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+}
+
+.modal-content h2,
+p {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: 15% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #e60000;
+}
